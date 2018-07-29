@@ -1,0 +1,33 @@
+{
+  "name": "timeline",
+  "version": "1.0.0",
+  "description": "Time Line",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bakerao/timeline.git"
+  },
+  "author": "BakerAO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bakerao/timeline/issues"
+  },
+  "homepage": "https://github.com/bakerao/timeline#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
