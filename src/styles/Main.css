@@ -1,5 +1,23 @@
 .grid {
     display: grid;
     background-color: lightgray;
-    border: 1px solid red;
+}
+
+.container {
+    height: 99vh;
+    width: 99vw;
+    border: 2px solid black;
+}
+
+img {
+    height: 5vh;
+    width: 5vh;
+}
+
+.header {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
 }
