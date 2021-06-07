@@ -1,8 +1,0 @@
-@import "./Grid.css";
-@import "./Display.css";
-
-.container {
-  height: 125vh;
-  width: 100vw;
-  border: 2px solid black;
-}
