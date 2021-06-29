@@ -1,5 +1,5 @@
-import Header from './Header'
-import Content from './content/Content'
+import Header from './header'
+import Content from './content'
 
 export default function App() {
   return (
