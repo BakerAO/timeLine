@@ -21,12 +21,12 @@ const styles = {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    border: '1px solid blue',
+    border: '1px solid blue'
   }
 }
 
 export default function Lines() {
-  const [begin, setBegin] = useState(-2000)
+  const [begin, setBegin] = useState(-1000)
   const [end, setEnd] = useState(0)
   const [china, setChina] = useState([])
   const [greece, setGreece] = useState([])
@@ -49,7 +49,7 @@ export default function Lines() {
           rome={rome}
         />
       </div>
-      <div style={styles.content}>
+      <div style={{ ...styles.content, minWidth: 4000 }}>
         <LineContent
           begin={begin}
           end={end}
