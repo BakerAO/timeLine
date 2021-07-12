@@ -1,15 +1,16 @@
 import React from 'react'
+import { Button } from 'antd'
 
 const styles = {
   container: {
     display: 'flex',
     flexDirection: 'column'
   },
+  button: {
+    margin: '0 10px 0 0'
+  },
   buttons: {
     display: 'flex'
-  },
-  button: {
-    border: '1px solid black'
   }
 }
 
@@ -152,15 +153,15 @@ export default function LineHeader(props) {
   function renderButtons() {
     return (
       <>
-        <div style={styles.button} onClick={updateChina}>
-          Ancient China
-        </div>
-        <div style={styles.button} onClick={updateIsrael}>
-          Old Testament
-        </div>
-        <div style={styles.button} onClick={updateGreece}>
-          Ancient Greece
-        </div>
+        <Button style={styles.button} onClick={updateChina}>
+          China
+        </Button>
+        <Button style={styles.button} onClick={updateIsrael}>
+          Israel
+        </Button>
+        <Button style={styles.button} onClick={updateGreece}>
+          Greece
+        </Button>
       </>
     )
   }
