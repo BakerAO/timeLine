@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Popover } from 'antd'
+import { useWiki } from '../../api/wikipedia'
 
 const styles = {
   line: {
@@ -13,6 +14,10 @@ export default function LineContent(props) {
   const {
     begin, end, china, greece, israel, rome
   } = props
+
+  const [pageId, setPageId] = useState('783')
+
+  const wikiText = useWiki(pageId)
 
   const renderSpace = (key, start, stop, color) => {
     const length = stop - start
@@ -38,7 +43,8 @@ export default function LineContent(props) {
 
     const content = (
       <div key={`content-${key}-${event.year}`}>
-        {event.title}
+        <div>{event.title}</div>
+        <div>{wikiText}</div>
       </div>
     )
 
@@ -51,6 +57,7 @@ export default function LineContent(props) {
         <div
           key={`${key}-${event.year}`}
           style={eventStyle}
+          onMouseOver={() => event.wikiId ? setPageId(event.wikiId) : null}
         />
       </Popover>
     )

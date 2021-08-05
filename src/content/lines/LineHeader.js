@@ -30,7 +30,8 @@ export default function LineHeader(props) {
           year: -960,
           duration: 1,
           title: 'Solomon builds the first Temple',
-          description: ''
+          description: '',
+          wikiId: 28329
         },
         {
           year: -722,
@@ -144,7 +145,8 @@ export default function LineHeader(props) {
           year: -332,
           duration: 1,
           title: 'Alexander the Great conquers Jerusalem',
-          description: ''
+          description: '',
+          wikiId: 783
         },
       ])
     }
